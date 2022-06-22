@@ -19,4 +19,9 @@ public class DateApplication {
 		return LocalTime.now().toString();
 	}
 
+	@GetMapping("api/date")
+	public String get_current_date(){
+		return LocalDate.now().toString();
+	}
+
 }
