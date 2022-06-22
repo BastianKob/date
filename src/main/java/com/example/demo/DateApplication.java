@@ -22,4 +22,10 @@ public class DateApplication {
 		return LocalTime.now().toString();
 	}
 
+	@GetMapping("api/date")
+	public String get_current_date(@RequestParam(name = "format", defaultValue = "") String format) {
+		return LocalDate.now().toString();
+	}
+
+
 }
