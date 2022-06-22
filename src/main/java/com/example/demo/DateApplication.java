@@ -32,5 +32,4 @@ public class DateApplication {
 			return LocalDate.now().format(fmt);
 		}
 	}
-
 }
